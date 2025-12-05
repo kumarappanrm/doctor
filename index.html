@@ -89,21 +89,38 @@
         /* Services Grid */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
         }
 
         .service-box {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
             text-align: center;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 600;
-            transition: 0.3s;
+            transition: all 0.3s ease;
             animation: zoomIn 0.8s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            border: 1px solid #f0f0f0;
+        }
+
+        .service-box img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+            transition: transform 0.3s ease;
+        }
+
+        .service-box:hover img {
+            transform: scale(1.1) rotate(5deg);
         }
 
         @keyframes zoomIn {
@@ -119,8 +136,9 @@
         }
 
         .service-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+            transform: translateY(-8px);
+            box-shadow: 0px 15px 30px rgba(10, 86, 136, 0.15);
+            border-color: #0A5688;
         }
 
         /* Appointment Services */
@@ -315,14 +333,38 @@
 
         <h2>Services</h2>
         <div class="services-grid">
-            <div class="service-box">Orthopaedic Rehabilitation</div>
-            <div class="service-box">Neurological Rehabilitation</div>
-            <div class="service-box">Geriatric Wellness</div>
-            <div class="service-box">Women’s Health Physiotherapy</div>
-            <div class="service-box">Sports Physiotherapy</div>
-            <div class="service-box">Post-Surgical Rehabilitation</div>
-            <div class="service-box">Pain Management</div>
-            <div class="service-box">Home Visit Physiotherapy</div>
+            <div class="service-box">
+                <img src="icon_ortho.png" alt="Orthopaedic">
+                Orthopaedic Rehabilitation
+            </div>
+            <div class="service-box">
+                <img src="icon_neuro.png" alt="Neurological">
+                Neurological Rehabilitation
+            </div>
+            <div class="service-box">
+                <img src="icon_geriatric.png" alt="Geriatric">
+                Geriatric Wellness
+            </div>
+            <div class="service-box">
+                <img src="icon_women.png" alt="Women's Health">
+                Women’s Health Physiotherapy
+            </div>
+            <div class="service-box">
+                <img src="icon_sports.png" alt="Sports">
+                Sports Physiotherapy
+            </div>
+            <div class="service-box">
+                <img src="icon_surgical.png" alt="Post-Surgical">
+                Post-Surgical Rehabilitation
+            </div>
+            <div class="service-box">
+                <img src="icon_pain.png" alt="Pain Management">
+                Pain Management
+            </div>
+            <div class="service-box">
+                <img src="icon_home.png" alt="Home Visit">
+                Home Visit Physiotherapy
+            </div>
         </div>
 
         <h2>Appointment-Based Services</h2>
