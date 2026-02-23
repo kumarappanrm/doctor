@@ -5,6 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Biomechanist Physiotherapy & Rehabilitation Centre</title>
+    <meta name="description" content="The Biomechanist Physiotherapy & Rehabilitation Centre in Coimbatore offers expert care in orthopaedic, neurological, geriatric, women's health, sports, cardio-pulmonary, and pain management physiotherapy. Book an appointment today." />
+    <meta name="keywords" content="physiotherapy Coimbatore, rehabilitation centre, orthopaedic physiotherapy, neurological rehabilitation, geriatric wellness, women's health physiotherapy, sports injury treatment, cardio pulmonary rehab, pain management, home physiotherapy" />
+    <meta name="author" content="The Biomechanist Physiotherapy & Rehabilitation Centre" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="The Biomechanist Physiotherapy & Rehabilitation Centre" />
+    <meta property="og:description" content="Expert physiotherapy and rehabilitation services in Coimbatore for all age groups." />
+    <meta property="og:image" content="logo.jpeg" />
+    <meta property="og:url" content="https://thebiomechanist.cbe" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Biomechanist Physiotherapy & Rehabilitation Centre" />
+    <meta name="twitter:description" content="Expert physiotherapy and rehabilitation services in Coimbatore." />
+    <meta name="twitter:image" content="logo.jpeg" />
 
     <style>
         * {
@@ -14,7 +30,7 @@
         body {
             margin: 0;
             font-family: "Poppins", sans-serif;
-            background: #f4faff;
+            background: linear-gradient(135deg, #f4faff 0%, #e0f7ff 100%);
             color: #333;
         }
 
@@ -25,6 +41,7 @@
             padding: 50px 20px;
             text-align: center;
             animation: fadeIn 1.5s ease-in-out;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
 
         @keyframes fadeIn {
@@ -72,6 +89,9 @@
             font-size: 28px;
             position: relative;
             animation: fadeInUp 1s ease-in-out;
+            border-bottom: 3px solid #0A5688;
+            padding-bottom: 10px;
+            display: inline-block;
         }
 
         @keyframes fadeInUp {
@@ -95,7 +115,9 @@
         }
 
         .service-box {
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             padding: 25px;
             border-radius: 16px;
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
@@ -108,7 +130,7 @@
             flex-direction: column;
             align-items: center;
             gap: 15px;
-            border: 1px solid #f0f0f0;
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .service-box img {
@@ -136,9 +158,27 @@
         }
 
         .service-box:hover {
-            transform: translateY(-8px);
+            transform: translateY(-8px) scale(1.02);
             box-shadow: 0px 15px 30px rgba(10, 86, 136, 0.15);
-            border-color: #0A5688;
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .service-box ul {
+            margin: 0;
+        }
+
+        .service-box li {
+            margin: 3px 0;
+            color: #555;
+            font-weight: 400;
+        }
+
+        .service-box li::before {
+            content: "✓ ";
+            color: #0A5688;
+            font-weight: bold;
+            margin-right: 5px;
         }
 
         /* Appointment Services */
@@ -151,13 +191,15 @@
 
         /* Appointment Form */
         .appointment-form {
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             padding: 30px;
             border-radius: 16px;
             box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
             animation: fadeInUp 1.2s;
-            border: 1px solid #e0e0e0;
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .appointment-form input,
@@ -283,6 +325,27 @@
             z-index: 999;
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "The Biomechanist Physiotherapy & Rehabilitation Centre",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "NSR Rd, Opposite Poornima Clinic, Saibaba Colony",
+        "addressLocality": "Coimbatore",
+        "postalCode": "641011",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91 63856 62155",
+      "email": "thebiomechanist.cbe@gmail.com",
+      "url": "https://thebiomechanist.cbe",
+      "description": "Provides evidence-based physiotherapy care for pain relief, mobility improvement, and recovery.",
+      "openingHours": "Mo-Sa 09:00-18:00",
+      "priceRange": "$$"
+    }
+    </script>
 </head>
 
 <body>
@@ -313,7 +376,7 @@
             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px;">
             <!-- Mission Card -->
             <div
-                style="background: linear-gradient(135deg, #ffffff, #f0f8ff); padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(10, 86, 136, 0.1); border-left: 5px solid #0A5688; transition: transform 0.3s ease;">
+                style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(10, 86, 136, 0.1); border-left: 5px solid #0A5688; border: 1px solid rgba(255, 255, 255, 0.3); transition: transform 0.3s ease;">
                 <div style="font-size: 40px; margin-bottom: 15px;">🚀</div>
                 <h2 style="margin-top: 0; color: #0A5688;">Mission</h2>
                 <p style="line-height: 1.6; color: #555;">At The Biomechanist.CBE, our mission is to restore movement,
@@ -324,7 +387,7 @@
 
             <!-- Vision Card -->
             <div
-                style="background: linear-gradient(135deg, #ffffff, #fff7ec); padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(255, 138, 0, 0.1); border-left: 5px solid #FF8A00; transition: transform 0.3s ease;">
+                style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(255, 138, 0, 0.1); border-left: 5px solid #FF8A00; border: 1px solid rgba(255, 255, 255, 0.3); transition: transform 0.3s ease;">
                 <div style="font-size: 40px; margin-bottom: 15px;">👁️</div>
                 <h2 style="margin-top: 0; color: #FF8A00;">Vision</h2>
                 <p style="line-height: 1.6; color: #555;">To be Coimbatore’s most trusted center for holistic
@@ -338,35 +401,76 @@
         <div class="services-grid">
             <div class="service-box">
                 <img src="icon_ortho.png" alt="Orthopaedic">
-                Orthopaedic Rehabilitation
+                <strong>Orthopaedic</strong><br>
+                <ul style="text-align: center; list-style: none; padding: 0; font-size: 14px;">
+                    <li>Post TKR</li>
+                    <li>Post bankart lesion</li>
+                    <li>Post ACL injury</li>
+                    <li>Post fracture fixation (orif & crif)</li>
+                    <li>Laminectomy</li>
+                    <li>Low back pain</li>
+                </ul>
             </div>
             <div class="service-box">
-                <img src="icon_neuro.png" alt="Neurological">
-                Neurological Rehabilitation
+                <img src="icon_neuro.png" alt="Neuro">
+                <strong>Neuro</strong><br>
+                <ul style="text-align: center; list-style: none; padding: 0; font-size: 14px;">
+                    <li>Stroke</li>
+                    <li>Parkinson</li>
+                    <li>Head injury</li>
+                    <li>Spinalcord fixation</li>
+                    <li>Facial palsy</li>
+                    <li>Nerve injury</li>
+                </ul>
             </div>
             <div class="service-box">
-                <img src="icon_geriatric.png" alt="Geriatric">
-                Geriatric Wellness
+                <img src="icon_surgical.png" alt="Cardio Pulmonary">
+                <strong>Cardio Pulmonary</strong><br>
+                <ul style="text-align: center; list-style: none; padding: 0; font-size: 14px;">
+                    <li>Post op cabg</li>
+                    <li>Post op valve replacement</li>
+                    <li>Post Pneumonectomy</li>
+                    <li>Endurance training</li>
+                </ul>
             </div>
             <div class="service-box">
-                <img src="icon_women.png" alt="Women's Health">
-                Women’s Health Physiotherapy
+                <img src="icon_geriatric.png" alt="Geriatric Wellness">
+                <strong>Geriatric Wellness</strong><br>
+                <ul style="text-align: center; list-style: none; padding: 0; font-size: 14px;">
+                    <li>Fall prevention</li>
+                    <li>General strength training</li>
+                </ul>
             </div>
             <div class="service-box">
-                <img src="icon_sports.png" alt="Sports">
-                Sports Physiotherapy
+                <img src="icon_pain.png" alt="Pain Relief">
+                <strong>Pain Relief</strong><br>
+                <ul style="text-align: center; list-style: none; padding: 0; font-size: 14px;">
+                    <li>Low back pain</li>
+                    <li>Neck pain</li>
+                    <li>Sciatica</li>
+                    <li>Knee pain</li>
+                    <li>PA Shoulder</li>
+                    <li>Trigger finger</li>
+                </ul>
             </div>
             <div class="service-box">
-                <img src="icon_surgical.png" alt="Post-Surgical">
-                Post-Surgical Rehabilitation
+                <img src="icon_sports.png" alt="Sports Injury">
+                <strong>Sports Injury</strong><br>
+                <ul style="text-align: center; list-style: none; padding: 0; font-size: 14px;">
+                    <li>Tennis elbow</li>
+                    <li>Golfers elbow</li>
+                    <li>Post traumatic stifness</li>
+                    <li>Ankle sprain</li>
+                    <li>Shoulder pain</li>
+                </ul>
             </div>
             <div class="service-box">
-                <img src="icon_pain.png" alt="Pain Management">
-                Pain Management
-            </div>
-            <div class="service-box">
-                <img src="icon_home.png" alt="Home Visit">
-                Home Visit Physiotherapy
+                <img src="icon_women.png" alt="Women's Wellness">
+                <strong>Women's Wellness</strong><br>
+                <ul style="text-align: center; list-style: none; padding: 0; font-size: 14px;">
+                    <li>Post natal</li>
+                    <li>Pre natal</li>
+                </ul>
             </div>
         </div>
 
@@ -422,6 +526,37 @@ Problem: ${problem}`;
         <div class="testimonial">“Excellent physiotherapy care. My knee pain reduced drastically.” – Saraswathi</div>
         <div class="testimonial">“Very professional and kind team. Highly recommended!” – Radha</div>
 
+        <h2>Feedback</h2>
+        <form id="feedbackForm" class="appointment-form">
+            <input type="text" id="feedbackName" placeholder="Your Name" required />
+            <input type="email" id="feedbackEmail" placeholder="Your Email" required />
+            <textarea id="feedbackMessage" placeholder="Your Feedback" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <script>
+            document.getElementById("feedbackForm").addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const name = document.getElementById("feedbackName").value;
+                const email = document.getElementById("feedbackEmail").value;
+                const message = document.getElementById("feedbackMessage").value;
+
+                // WhatsApp number
+                const whatsappNumber = "916385662155";
+
+                const feedbackMessage = `New Feedback
+-----------------------
+Name: ${name}
+Email: ${email}
+Feedback: ${message}`;
+
+                const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(feedbackMessage);
+
+                window.open(url, "_blank");
+            });
+        </script>
+
         <h2>Find Us on Map</h2>
         <div style="border-radius: 12px; overflow:hidden; margin-top:10px;">
             <iframe
@@ -431,12 +566,12 @@ Problem: ${problem}`;
 
         <h2>Contact Us</h2>
         <p><strong>Address:</strong> NSR Rd, Opposite Poornima Clinic, Saibaba Colony, Coimbatore 641011</p>
-        <p><strong>Phone:</strong> +91 63856 62155</p>
+        <p><strong>Phone:</strong> +91 63856 62155 / +91 88258 62155</p>
         <p><strong>Email:</strong> thebiomechanist.cbe@gmail.com</p>
     </div>
 
     <footer>
-        © 2025 The Biomechanist Physiotherapy & Rehabilitation Centre
+        © 2026 The Biomechanist Physiotherapy & Rehabilitation Centre
     </footer>
 
     <a class="whatsapp-btn" href="https://wa.me/916385662155" target="_blank">💬 WhatsApp Chat</a>
